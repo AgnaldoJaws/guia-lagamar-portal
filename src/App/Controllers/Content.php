@@ -24,7 +24,13 @@ class Content extends Action
     {
         $content = Container::Content($_GET['city'],$_GET['category']);
 
+        if($content == null){
+
+            $this->noContent();
+        }
+
         $this->view->objetos = $content;
+
 
         $this->render('content');
     }
@@ -32,6 +38,8 @@ class Content extends Action
     public function conteudoFull(){
 
         $content = Container::ContentFull($_GET['id']);
+
+
 
         $this->view->objetos = $content;
 
@@ -55,6 +63,11 @@ class Content extends Action
         $this->view->objetos = $content;
         $this->render('index');
 
+    }
+
+    public function noContent(){
+
+        $this->render('no-content');
     }
     
 

@@ -8316,6 +8316,10 @@ button.bg-dark:focus {
     font-size: 100%;
   }
 
+  .noContent{
+    font-size: 100%;
+  }
+
   .h-100 {
     padding-left: 10%;
     padding-top: 7%;

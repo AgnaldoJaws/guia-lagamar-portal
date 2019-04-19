@@ -53,10 +53,17 @@ class Container {
     public static  function Content ($city, $category)
     {
 
-        $client = new Client();
-        $res = $client->request('GET', 'http://dev.stbelavista.com.br/api/contenties/'.$category.'/'. $city );
+        try{
+            $client = new Client();
+            $res = $client->request('GET', 'http://dev.stbelavista.com.br/api/contenties/'.$category.'/'. $city );
+            return json_decode($res->getBody()->getContents(), true);
 
-        return json_decode($res->getBody()->getContents(), true);
+        }catch (\Exception $e){
+
+            return null;
+        }
+
+
     }
 
     public static  function ContentFull ($id)

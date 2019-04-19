@@ -24,6 +24,8 @@ class Init extends Bootstrap
 
         $ar['content'] = ['route' => '/content', 'controller' => 'content', 'action' => 'conteudo'];
 
+        $ar['no-content'] = ['route' => '/no-content', 'controller' => 'content', 'action' => 'noContent'];
+
         $ar['content-full'] = ['route' => '/content-full', 'controller' => 'content', 'action' => 'conteudoFull'];
 
         $ar['incidentes-novo'] = ['route' => '/incidentes/novo', 'controller' => 'incidentes', 'action' => 'novo'];
