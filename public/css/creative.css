@@ -8300,6 +8300,28 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
+@media only screen and (max-width: 1000px) {
+  .fixed-top {
+
+    top: -100px !important;
+
+  }
+
+  .front-box-top {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .boder1{
+    font-size: 100%;
+  }
+
+  .h-100 {
+    padding-left: 10%;
+    padding-top: 7%;
+  }
+}
+
 .fixed-bottom {
   position: fixed;
   right: 0;
