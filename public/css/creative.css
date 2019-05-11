@@ -10913,3 +10913,23 @@ header.masthead h1 {
   border-color: #11453e;
 }
 
+.counter-view{
+  border:solid #11453e 5px;
+  width: 50%;
+  height: 50px;
+}
+
+.footer{
+  background-color: #000000;
+}
+
+.text-muted {
+  color: #ffffff !important;
+}
+
+.img-counter{
+  height: 15px;
+}
+.text-muted-2 {
+  color: black;
+}
