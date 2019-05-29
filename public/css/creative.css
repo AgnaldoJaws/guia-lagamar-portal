@@ -10867,8 +10867,9 @@ header.masthead h1 {
 }
 
 .front-box-top{
-  margin-top: 3%;
-  margin-left: 15%;
+  padding-top: 3%;
+  padding-left: 15%;
+  width: 100%;
 }
 
 .input-group > .custom-select:not(:last-child) {
